@@ -49,7 +49,7 @@ cacheSolve <- function(x, ...) {
   
   my_matrix <- x$getmatrix()
   message ("Calculating the inverse for the first time")
-  m <- solve(my_matrix, ...)
-  x$setinverse(m)
-  m
+  m_inv <- solve(my_matrix, ...)
+  x$setinverse(m_inv)
+  m_inv
 }
